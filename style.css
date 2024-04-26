@@ -1,0 +1,75 @@
+body{
+    font-family: "Sedan", serif;
+    background-image: url(b\ 3.jpg);
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper >*{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+header{
+    background: whitesmoke;
+    height: 120px;
+    text-align: center;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+}
+.nav{
+    background:whitesmoke;
+    height: 80px;
+    border: 1px solid;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.footer{
+    background: whitesmoke;
+    height: 80px;
+    border: 1px solid;
+    color: rgb(0, 0, 0);
+}
+.main{
+    background: whitesmoke;
+    height: 500px;
+    border: 1px solid;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+img{
+    float: center;
+}
+.aside{
+    background: whitesmoke;
+    border: 1px solid;
+    text-align: left;
+    float: left;
+    color: rgb(0, 0, 0);
+}
+/* tampilan rtesponsive */
+@media all and (min-width: 800px){
+    .main{
+        flex: 2;
+    }
+    .aside{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+    .aside{
+        flex: 1;
+    }
+}
